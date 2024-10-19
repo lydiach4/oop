@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap"
+      rel="stylesheet"
+    />
+    <title>shopping card</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        background-color: rgb(203, 200, 196);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        background-color: antiquewhite;
+        border-radius: 30px;
+        margin: 150px;
+        gap: 30px;
+        font-family: "Lavishly Yours", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .card {
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px gray;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        gap: 10px;
+      }
+      .shopping-list {
+        background-color: aliceblue;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        height: 400px;
+        width: 400px;
+      }
+      button {
+        border-radius: 50%;
+        background-color: black;
+        color: aliceblue;
+        padding: 14px;
+      }
+      #the-list{
+        display: flex;
+        gap: 20px;
+      }
+      p{
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="shopping-list">
+        <h1 class="list-title">Shopping list : </h1>
+        <ul id="the-list"></ul>
+        <p> Total amount : <span id="total"> </span> $</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/082624CKAR_side_wm_4?size=3000,3000&extend=0,0,0,0&align=0,0&$product_item_grid_g$&wid=700&hei=700"
+            alt=""
+          />
+          <h1 class="title">Garden Party Voyage 49 bag</h1>
+          <p><span class="price"> 5000</span> $</p>
+          <div>
+            <button class="add-button">+</button>
+            <button class="minus-button">-</button>
+          </div>
+          <p> Quantity : <span class="quantity"> 0 </span> </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/083894CAAD_side_wm_4?size=3000,3000&extend=0,0,0,0&align=0,0&$product_item_grid_g$&wid=700&hei=700"
+            alt=""
+          />
+          <h1 class="title">Pursangle tote bag</h1>
+          <p><span class="price"> 3950 </span> $</p>
+          <div>
+            <button class="add-button">+</button>
+            <button class="minus-button">-</button>
+          </div>
+          <p> Quantity : <span class="quantity"> 0 </span> </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/085078CKAA_side_wm_4?size=3000,3000&extend=0,0,0,0&align=0,0&$product_item_grid_g$&wid=700&hei=700"
+            alt=""
+          />
+          <h1 class="title">Garden Party Voyage 49 bag</h1>
+          <p><span class="price">6250 </span> $</p>
+          <div>
+            <button class="add-button">+</button>
+            <button class="minus-button">-</button>
+          </div>
+          <p> Quantity : <span class="quantity"> 0 </span> </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/herbag-zip-cabine-bag--077787CKAK-front-1-300-0-800-800_g.jpg"
+            alt=""
+          />
+          <h1 class="title">Herbag Zip cabine bag</h1>
+          <p><span class="price"> 4150</span> $</p>
+          <div>
+            <button class="add-button">+</button>
+            <button class="minus-button">-</button>
+          </div>
+          <p> Quantity : <span class="quantity"> 0 </span> </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/085761CKAB_side_wm_4?size=3000,3000&extend=0,0,0,0&align=0,0&$product_item_grid_g$&wid=700&hei=700"
+            alt=""
+          />
+          <h1 class="title">Garden Party Voyage 49 bag</h1>
+          <p><span class="price"> 6250</span> $</p>
+          <div>
+            <button class="add-button">+</button>
+            <button class="minus-button">-</button>
+          </div>
+          <p> Quantity : <span class="quantity"> 0 </span> </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://assets.hermes.com/is/image/hermesproduct/084260CKAC_side_wm_4?size=3000,3000&extend=0,0,0,0&align=0,0&$product_item_grid_g$&wid=700&hei=700"
+            alt=""
+          />
+          <h1 class="title">Garden Party pockets vertical bag</h1>
+          <p><span class="price">7250 </span> $</p>
+          <div>
+            <button class="add-button">+</button>
+            <button class="minus-button">-</button>
+          </div>
+          <p> Quantity : <span class="quantity"> 0 </span> </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
